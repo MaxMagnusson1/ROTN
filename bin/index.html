@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RevengeOfTheNerds</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!-- APPLICATION BUNDLE -->
+        <script src="RevengeOfTheNerds.js"></script>
+        
+        <!-- BOOTSTRAP -->
+        <div>
+            <img id="startImage" src="/rotn1920x1080.png" alt="startingScreen" onclick="runBootstrap(this);">      
+        </div>
+        
+        <script>
+            function runBootstrap(imageElement) {
+                RevengeOfTheNerds.bootstrap();
+                delete imageElement.onclick;
+                imageElement.onclick = null;
+            }
+        </script>
+       
+    </head>
+</html>
